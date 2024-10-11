@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcode Scanner</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="container">
+        <h1>Barcode Scanner</h1>
+        <ul id="navbar-menu">
+          <li><a href="#" id="start-scan">Start Scanning</a></li>
+          <li><a href="#" id="stop-scan">Stop Camera</a></li>
+          <li><a href="#" id="upload-button">Upload Image</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="scanner" style="width: 100%; height: 400px; display: none"></div>
+    <div id="result"></div>
+
+    <div class="button-container">
+      <input
+        type="file"
+        id="upload-image"
+        accept="image/*"
+        style="display: none"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
